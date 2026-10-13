@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Pembuat Surat</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header><h1>✉️ Pembuat Surat</h1><div class="bt"><button class="tab" onclick="pv(0)">Form</button><button class="tab" onclick="pv(1)">Pratinjau</button><button id="pr">🖨 Cetak / PDF</button><button id="cp" class="g">Salin teks</button></div></header>
+<main><section class="panel">
+<label>Jenis surat<select id="type"></select></label>
+<div style="font-weight:600;font-size:12.5px;margin-bottom:12px">Warna kop &amp; judul surat<div id="pal" style="margin-top:6px"></div></div>
+<div id="tf"></div>
+<label>Isi surat <small>(bebas diedit; kurung siku [..] = belum diisi)</small><textarea id="isi" rows="15"></textarea></label>
+<button id="rs" class="g">↺ Isi ulang dari template</button>
+<details open><summary>Kop, nomor &amp; penerima</summary><div id="cf"></div></details>
+<details open><summary>Penanda tangan</summary><div id="sf"></div><div id="sgp"></div></details>
+<button id="clr" class="g">Hapus semua isian</button>
+<p><small>Draf tersimpan otomatis di browser Anda. Jika tombol cetak tidak merespons, buka halaman di tab baru lalu tekan Ctrl+P.</small></p>
+</section><section class="view" id="view"><div class="paper" id="paper"></div></section></main>
+<script src="script.js"></script></body></html>
